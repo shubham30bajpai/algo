@@ -1,4 +1,4 @@
-string = 'abcabcbb'
+string = 'aaaaaaabcb'
 longestString = []
 currentString = []
 for i in string:
@@ -9,5 +9,7 @@ for i in string:
         currentString.append(i)
     else:
         currentString.append(i)
+        if len(currentString) > len(longestString):
+            longestString = currentString
 
 print(longestString)
